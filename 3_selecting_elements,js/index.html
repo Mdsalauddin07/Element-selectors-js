@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Element Selection Methods</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.table-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px;
+}
+
+.reference-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1em;
+    text-align: left;
+}
+
+.reference-table thead tr {
+    background-color: #4CAF50;
+    color: #ffffff;
+    text-align: left;
+}
+
+.reference-table th,
+.reference-table td {
+    padding: 12px 15px;
+    border: 1px solid #dddddd;
+}
+
+.reference-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.reference-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.reference-table tbody tr:last-of-type {
+    border-bottom: 2px solid #4CAF50;
+}
+
+.reference-table tbody tr:hover {
+    background-color: #d1e7dd;
+}
+
+    </style>
+</head>
+<body>
+    <div class="table-container">
+        <table class="reference-table">
+            <thead>
+                <tr>
+                    <th>Method</th>
+                    <th>Selector Type</th>
+                    <th>Return Type</th>
+                    <th>Static or Live</th>
+                    <th>CSS Selector Support</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>getElementById</td>
+                    <td>ID</td>
+                    <td>Element</td>
+                    <td>N/A</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>getElementsByClassName</td>
+                    <td>Class</td>
+                    <td>HTMLCollection</td>
+                    <td>Live</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>getElementsByTagName</td>
+                    <td>Tag</td>
+                    <td>HTMLCollection</td>
+                    <td>Live</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>querySelector</td>
+                    <td>CSS Selector (first match)</td>
+                    <td>Element</td>
+                    <td>Static</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>querySelectorAll</td>
+                    <td>CSS Selector (all matches)</td>
+                    <td>NodeList</td>
+                    <td>Static</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>getElementsByName</td>
+                    <td>Name</td>
+                    <td>NodeList</td>
+                    <td>Static</td>
+                    <td>No</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
